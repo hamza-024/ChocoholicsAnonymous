@@ -1,0 +1,186 @@
+<!-- DOCTYPE is required in HTML>
+<!--this is the formatting for a commenting line.  -->
+
+<!DOCTYPE html>
+
+<!--  Below is the start of the head of a document -->
+<!-- utf-8 is the character encoding which is popular in HTML -->
+<!-- Give your document a title -->
+
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>HTML Overview</title>  
+	</head>
+<!-- Notice how I ended the head of the document with a </head>.  This is required. -->
+	
+	<style>
+	table, th, td {
+	  border:1px solid black;
+	  
+	}
+	
+	.center {
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+	
+	img {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+	</style>
+
+
+<!--This is now the body -->
+<!--The <p> is the paragraph notation and <strong> is for bold type-->
+<!-- This is a list of header sizes -->
+	<p>
+	<h1 style="text-align:center;"><strong><font color = "red">CS 200 Team 6 - Project 3</font></strong></h1>
+	</p>
+	<hr>
+	
+	
+		<table class="center">
+		  <tr>
+		    <th>Name</th>
+		    <th>CWID</th>
+		    <th>Email</th>
+		    <th>Hours</th>
+		  </tr>
+		  <tr>
+		    <td>Luca Hallenbeck</td>
+		    <td>12158092</td>
+		    <td>lbhallenbeck@crimson.ua.com</td>
+		    <td>4</td>
+		  </tr>
+		  <tr>
+		    <td>Mae Olsen</td>
+		    <td>12218916</td>
+		    <td>meolsen2@crimson.ua.edu</td>
+		    <td>4</td>
+		  </tr>
+		  <tr>
+		    <td>Sam Kwon</td>
+		    <td>12243631</td>
+		    <td>skwon12@crimson.ua.edu</td>
+		    <td>4</td>
+		  </tr>
+		  <tr>
+		    <td>Hamza Adnan</td>
+		    <td>12149062</td>
+		    <td>hadnan@crimson.ua.edu</td>
+		    <td>4</td>
+		  </tr>
+		  <tr>
+		    <td>Christian Meraz-Santiago</td>
+		    <td>12254174</td>
+		    <td>cjmerazsantiago@crimson.ua.edu</td>
+		    <td>4</td>
+		  </tr>
+		</table>
+		
+		<h3 style="text-align:center;"><strong>Task Distribution Table:</strong></h3>
+		<table class="center">
+		  <tr>
+		    <th>Name</th>
+		    <th>Task</th>
+		    <th>Percentage</th>
+		  </tr>
+		  <tr>
+		    <td>Luca Hallenbeck</td>
+		    <td>Class Diagram, Sequence Diagrams</td>
+		    <td>20%</td>
+		  </tr>
+		  <tr>
+		    <td>Mae Olsen</td>
+		    <td>Sequence Diagrams, Submitter</td>
+		    <td>20%</td>
+		  </tr>
+		  <tr>
+		    <td>Sam Kwon</td>
+		    <td>Class Diagram, Sequence Diagrams</td>
+		    <td>20%</td>
+		  </tr>
+		  <tr>
+		    <td>Hamza Adnan</td>
+		    <td>Design Paragraph</td>
+		    <td>20%</td>
+		  </tr>
+		  <tr>
+		    <td>Christian Meraz-Santiago</td>
+		    <td>Sequence Diagrams</td>
+		    <td>20%</td>
+		  </tr>
+		</table>
+		
+		<hr>
+		
+		<h3 style="text-align:center;"><strong>Bitbucket Statistics:</strong></h3> 
+		<img class="center" src = "P3 Bitbucket.png" Width = "600" Height = "600">
+		<hr>
+		
+		<h3 style="text-align:center;"><strong>Design Paragraph:</strong></h3><p style="margin-left: 25px; margin-right: 25px;"> Our ChocAn System design embodies high cohesion and low coupling, foundational principles for robust software design. The high cohesion is evident: classes like Verify Operator, provider, and manager are logically grouped by their shared verification function, while Member and Provider Management, despite sharing classes like Terminal and Database, maintain distinct data access routes. This promotes clarity and ease of maintenance. On the coupling side, modules like Verify provider, operator, and manager share functions but operate independently, preventing cascading errors from changes in one module. Similarly, terminals for Operator, Manager, and Provider, though sharing an interface, retain distinct functionalities. Report functions, though reliant on Member and Provider data, access unique data streams, preserving system flexibility. In essence, the synergy of high cohesion and low coupling in our design ensures a balance between functionality and modularity, making ChocAn resilient and adaptable. </p>
+		<hr>
+
+<!--This is how to embed an image in your document -->
+	<h3 style="text-align:center;"><strong>Class Diagram:</strong></h3>
+	<img class="center" src = "classDiagramUpdate2.png" Width = "1000" Height = "600">
+	<hr>
+
+
+<!--This is how to embed an image in your document -->
+
+	<p>
+	</p>
+	
+
+	<h3 style="text-align:center;"><strong>Sequence Diagrams:</strong></h3>
+	<p><strong>Verify Provider:</strong></p>
+	<img class="center" src = "ProviderVerification.png" Width = "750" Height = "600">
+	<p><strong>Verify Operator:</strong></p>
+	<img class="center" src = "OperatorVerification.png" Width = "750" Height = "600">
+	<p><strong>Verify Manager:</strong></p>
+	<img class="center" src = "ManagerVerification.png" Width = "750" Height = "600">
+	
+	<p style="text-align:left;"><strong>Member Management:</strong><p>
+	
+	<p>
+		<img class="center" src = "MM Sequence.png" Width = "600" Height = "800">
+	</p>
+	
+	<p style="text-align:left;"><strong>Provider Management:</strong><p>
+	
+	
+	<p>
+		<img class="center" src = "PM Sequence.png" Width = "600" Height = "800">
+	</p>
+	
+	<p><strong>Bill ChocAn: </strong></p>
+	<img class="center" src = "Bill ChocAn Sequence.png" Width = "800" Height = "800">
+	
+	<p><strong>Accounting Procedure:</strong></p>
+	<img class = "center" src = "Accounting Sequence.png" Width = "800" Height = "800">
+
+	<p><strong>Request Report:</strong></p>
+	<img class = "center" src = "RequestReportSeq.png" Width = "800" Height = "800">
+	
+	<p><strong>Request Provider Directory:</strong></p>
+	<img class = "center" src = "requestProviderDirectorySeq.png" Width = "800" Height = "800">
+	
+	<p><strong>Verify Member:</strong></p>
+	<img class = "center" src = "verifyMemberSeq.png" Width = "800" Height = "800">
+	
+
+<!--This is how to embed an image in your document -->
+	<p>
+	</p>
+<!-- This is how you include a heading for a section and an image -->
+	
+
+<!-- You will end the body section. Required.-->
+	</body>
+
+<!-- You will end the html document. Required.-->
+</html>

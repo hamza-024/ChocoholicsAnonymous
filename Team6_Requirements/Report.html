@@ -1,0 +1,325 @@
+<!-- DOCTYPE is required in HTML>
+<!--this is the formatting for a commenting line.  -->
+
+<!DOCTYPE html>
+
+<!--  Below is the start of the head of a document -->
+<!-- utf-8 is the character encoding which is popular in HTML -->
+<!-- Give your document a title -->
+
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>HTML Overview</title>  
+	</head>
+<!-- Notice how I ended the head of the document with a </head>.  This is required. -->
+	
+	<style>
+	table, th, td {
+	  border:1px solid black;
+	  
+	}
+	
+	.center {
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+	
+	img {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+	</style>
+
+
+<!--This is now the body -->
+<!--The <p> is the paragraph notation and <strong> is for bold type-->
+<!-- This is a list of header sizes -->
+	<p>
+	<h1 style="text-align:center;"><strong><font color = "red">CS 200 Team 6 - Project 1</font></strong></h1>
+	</p>
+	<hr>
+	
+	
+		<table class="center">
+		  <tr>
+		    <th>Name</th>
+		    <th>CWID</th>
+		    <th>Email</th>
+		    <th>Hours</th>
+		  </tr>
+		  <tr>
+		    <td>Luca Hallenbeck</td>
+		    <td>12158092</td>
+		    <td>lbhallenbeck@crimson.ua.com</td>
+		    <td>4</td>
+		  </tr>
+		  <tr>
+		    <td>Mae Olsen</td>
+		    <td>12218916</td>
+		    <td>meolsen2@crimson.ua.edu</td>
+		    <td>4</td>
+		  </tr>
+		  <tr>
+		    <td>Sam Kwon</td>
+		    <td>12243631</td>
+		    <td>skwon12@crimson.ua.edu</td>
+		    <td>4</td>
+		  </tr>
+		  <tr>
+		    <td>Hamza Adnan</td>
+		    <td>12149062</td>
+		    <td>hadnan@crimson.ua.edu</td>
+		    <td>4</td>
+		  </tr>
+		  <tr>
+		    <td>Christian Meraz-Santiago</td>
+		    <td>12254174</td>
+		    <td>cjmerazsantiago@crimson.ua.edu</td>
+		    <td>4</td>
+		  </tr>
+		</table>
+		
+		<h3 style="text-align:center;"><strong>Task Distribution Table:</strong></h3>
+		<table class="center">
+		  <tr>
+		    <th>Name</th>
+		    <th>Task</th>
+		    <th>Percentage</th>
+		  </tr>
+		  <tr>
+		    <td>Luca Hallenbeck</td>
+		    <td>UML Use Case Diagram, Coupling and Cohesion, Submitter</td>
+		    <td>20%</td>
+		  </tr>
+		  <tr>
+		    <td>Mae Olsen</td>
+		    <td>Use Case Description List, Bitbucket Statistics</td>
+		    <td>20%</td>
+		  </tr>
+		  <tr>
+		    <td>Sam Kwon</td>
+		    <td>Glossary, Tables, Paragraph, Use Case Diagram</td>
+		    <td>20%</td>
+		  </tr>
+		  <tr>
+		    <td>Hamza Adnan</td>
+		    <td>Use Case Diagram, Glossary</td>
+		    <td>20%</td>
+		  </tr>
+		  <tr>
+		    <td>Christian Meraz-Santiago</td>
+		    <td>Use Case Diagram, Tables</td>
+		    <td>20%</td>
+		  </tr>
+		</table>
+		
+		<hr>
+		
+		<h3 style="text-align:center;"><strong>Bitbucket Statistics:</strong></h3>
+		<p><img src = "Bitbucket Statistics.png" Width = "650" Height = "450"></p>
+		<hr>
+		
+		
+		<h3 style="text-align:center;"><strong>Project 1 Overview:</strong></h3>
+		<p style="margin-left: 25px; margin-right: 25px;">In this project, we got a basic understanding of the ChocAn system, created a glossary of terms and a use-case diagram, and wrote use-case descriptions. We had to assume that were responsible to write only the ChocAn data processing software and that another organization will be responsible for the communications software, 
+		for designing the ChocAn provider’s terminal, for the software needed by Acme Accounting Services, and for implementing the EFT component. As a result of this, we assumed that our system is only responsible for allowing providers to bill ChocAn and request provider directories, allowing operators to modify statuses, allowing managers to access reports, and running the weekly accounting procedures.
+		 Additionally, we familiarized ourselves with HTML, Eclipse, UMLetino, and Bitbucket. We each created our own HTML files with header and task distribution tables, as well as our own individual use-case diagrams, which are also in our submission folder. 
+		The glossary, group use-case diagram, and use-case descriptions are on this Report.html file. The header and task distribution tables are also on this Report.html file along with the Bitbucket statistics image. The submitter of the Report.html file is Luca Hallenbeck. </p>
+		<hr>
+
+<!--This is how to embed an image in your document -->
+	<h3 style="text-align:center;"><strong>Use Case Diagram:</strong></h3>
+
+
+<!--This is how to embed an image in your document -->
+
+	<p>
+		<img src = "Updated Use Case Diagram.png" Width = "1000" Height = "900">
+	</p>
+	
+	<hr>
+	
+<!-- This is how you include a heading for a section and an image -->
+	<h3 style="text-align:center;"><strong>Glossary:</strong></h3>
+	<p>
+		<ul>
+			<li>Acme Accounting Services – Third-party group responsible for financial procedures</li>
+			<li>ChocAn Data Center – Where the main accounting procedure is run; houses info about members/providers and their status</li> 
+			<li>Chocoholics Anonymous (ChocAn) – An organization dedicated to helping people addicted to chocolate</li> 		
+			<li>EFT Data – Electronic funds transfer data used to pay providers</li>		
+			<li>Manager – Individual that receives summary reports</li>		
+			<li>Member – A member of the ChocAn organization</li>		
+			<li>Member Card – Plastic card embossed with the member’s name and a nine-digit member number and incorporating a magnetic strip on which that information is encoded</li>		
+			<li>Member Report – Weekly report received by each member who consulted a ChocAn provider during previous week; lists services provided to that member sorted in order of service date</li>		
+			<li>Operator – Individual with the ability to add/delete/update members and providers of ChocAn; Works at ChocAn data center</li> 	
+			<li>Provider – Health care professional that provides services to ChocAn members</li>		
+			<li>Provider Computer Terminal – specially designed ChocAn computer terminal, similar to a credit card device in a shop, that reads the member card, dials the ChocAn data center, and verifies member number, as well as display various data and forms</li>		
+			<li>Provider Directory – Ordered list of services and corresponding codes and costs</li> 	
+			<li>Provider Report – List of services provided to ChocAn members</li> 		
+			<li>Service Code – Six-digit code corresponding to a service provided by one of the providers; found in provider directory</li> 		
+			<li>Summary Report – Lists every provider to be paid that week, the number of consultations each had, and their total fee; sent as an e-mail attachment</li> 		
+			<li>Timer – Automatically completes procedures and reports</li> 
+		</ul> 
+	</p>
+	
+
+	<hr>
+	<h3 style="text-align:center;"><strong>Use Case Description List:</strong></h3>
+	
+	<p>
+		<strong>Use Case: </strong>Run weekly accounting procedures<br>
+		<strong>Context: </strong>The week's files of services provided are read and several reports are printed.<br>
+		<strong>Actors: </strong>Timer<br>
+		<strong>Main Success Scenario: </strong><br>
+		<p style="margin-left: 25px;">
+			<strong>1.</strong> Timer recognizes that it is midnight on Friday<br>
+			<strong>2.</strong> System is alerted to begin running weekly accounting procedures<br>
+			<strong>3.</strong> File containing all of the service provided by health care professionals is read<br>
+			<strong>4.</strong> System automatically begins compiling<br>
+			<strong>&emsp;4.1</strong> System generates summary report<br>
+			<strong>&emsp;4.2</strong> System generates service report<br>
+			<strong>&emsp;4.3</strong> System generates member report<br>
+
+				<strong>5.</strong> System sends out reports to consumers and providers as email attachments<br>
+		</p>
+		<strong>Extensions: </strong>None<br>	
+	</p><br>
+	<hr style="border-top: dotted 1px;"/><br>
+	<p>
+		<strong>Use Case: </strong>Bill ChocAn<br>
+		<strong>Context: </strong>Provider acquires appropriate account and service information from member to bill ChocAn for said service(s).<br>
+		<strong>Actors: </strong>Provider<br>
+		<strong>Main Success Scenario: </strong><br>
+		<p style="margin-left: 25px;">
+			<strong>1.</strong> 	Provider swipes member card or keys in member number to verify membership<br>
+			<strong>&emsp;1.1</strong> If number is valid, “Validated” is displayed on the screen<br>
+			<strong>2.</strong> 	Key in date of service in MM-DD-YYYY format<br>
+			<strong>3.</strong> 	Search Provider Directory for appropriate six-digit service code<br>
+			<strong>&emsp;3.1</strong> Key in service code<br>
+			<strong>4.</strong> 	Verify that service was provided<br>
+			<strong>5.</strong> 	Enter comments about service provided (optional)<br>
+			<strong>6.</strong> 	Return to provider menu<br>
+		</p>
+		<strong>Extensions:</strong><br>
+		<p style="margin-left: 25px;">
+			<strong>1.1a.</strong> 	If number is invalid, “Invalid number” is displayed on the screen<br>
+			<strong>1.1b.</strong> 	If member owes fees, member status is suspended and “Member Suspended” is displayed on the screen<br>
+			<strong>4a.</strong> 	Software prints error message if service code doesn’t exist<br>
+		</p>
+	</p><br>
+	<hr style="border-top: dotted 1px;"/><br>
+	<p>
+		<strong>Use Case: </strong>Access Report<br>
+		<strong>Context: </strong>A ChocAn manager can request to run any report individually from the week’s file of services at any time during the week.<br>
+		<strong>Actors: </strong>Manager<br>
+		<strong>Main Success Scenario: </strong><br>
+		<p style="margin-left: 25px;">
+			<strong>1.</strong> 	Manager decides a report is necessary</strong> <br>
+			<strong>2.</strong> 	Manager prompts system to run a report<br>
+			<strong>3.</strong> 	Report is compiled by system and printed for viewing by manager<br>
+		</p>
+		<strong>Extensions:</strong><br>
+		<p style="margin-left: 25px;">
+			<strong>2a.</strong> 	Manager prompts system to run a service report<br>
+			<strong>2b.</strong> 	Manager prompts system to run a member report<br>
+			<strong>2c.</strong> 	Manager prompts system to run a summary report<br>
+		</p>
+	</p><br>
+	<hr style="border-top: dotted 1px;"/><br>
+	<p>
+		<strong>Use Case: </strong>Modify Status<br>
+		<strong>Context: </strong>During the day, the ChocAn Data Center runs in interactive mode to allow the operator to edit member and provider information.<br>
+		<strong>Actors: </strong>Operator<br>
+		<strong>Main Success Scenario: </strong><br>
+		<p style="margin-left: 25px;">
+			<strong>1.</strong> 	Choose to edit member information <br>
+			<strong>2.</strong> 	Choose to edit provider information <br>
+			<strong>3.</strong>		Return to operator menu<br>
+		</p>
+		<strong>Extensions:</strong><br>
+		<p style="margin-left: 25px;">
+			<strong>1a.</strong> 	Delete member from the ChocAn system if they resigned<br>
+			<strong>1b.</strong> 	Update member records<br>
+			<strong>1c.</strong> 	Add member to ChocAn system<br>
+			<strong>2a.</strong> 	Delete provider from ChocAn system<br>
+			<strong>2b.</strong> 	Update provider records<br>
+			<strong>2c.</strong> 	Add provider to ChocAn system<br>
+		</p>
+		<hr style="border-top: dotted 1px;"/><br>
+	<p>
+		<strong>Use Case: </strong>Request provider directory<br>
+		<strong>Context: </strong>Provider can request a Provider Directory, an alphabetically ordered list of service names and corresponding service codes and fees.<br>
+		<strong>Actors: </strong>Provider<br>
+		<strong>Main Success Scenario: </strong><br>
+		<p style="margin-left: 25px;">
+			<strong>1.</strong> 	Provider requests directory<br>
+			<strong>2.</strong> 	Directory is sent as email attachment <br>
+		</p>
+		<strong>Extensions: </strong>None<br>
+	</p>
+	<hr style="border-top: dotted 1px;"/><br>
+	<p>
+		<strong>Use Case: </strong>Verify Member<br>
+		<strong>Context: </strong>Provider verifies membership to provide member with services.<br>
+		<strong>Actors: </strong>Provider<br>
+		<strong>Main Success Scenario: </strong><br>
+		<p style="margin-left: 25px;">
+			<strong>1.</strong> 	 Slide member card through card reader.<br>
+			<strong>2.</strong> 	 View member status.<br>
+			<strong>&emsp;2.1</strong> If number is valid, “Validated” is displayed on the screen<br>
+			<strong>3.</strong>		 Choose next task.<br>
+		</p>
+		<strong>Extensions:</strong><br>
+		<p style="margin-left: 25px;">
+		<strong>2.1.a.</strong>If number is invalid, "Invalid number" is displayed.<br>
+		<strong>2.1.b.</strong>If member owes fees, "Suspended" is displayed.<br>
+	</p>
+	<hr style="border-top: dotted 1px;"/><br>
+	<p>
+		<strong>Use Case: </strong>Verify Provider<br>
+		<strong>Context: </strong>Provider verifies identity to use provider terminal.<br>
+		<strong>Actors: </strong>Provider<br>
+		<strong>Main Success Scenario: </strong><br>
+		<p style="margin-left: 25px;">
+			<strong>1.</strong> 	 Open provider terminal.<br>
+			<strong>2.</strong> 	 Enter provider number.<br>
+			<strong>3.</strong>		 Select task in provider terminal.<br>
+		</p>
+		<strong>Extensions:</strong>None<br>
+	</p>
+	<hr style="border-top: dotted 1px;"/><br>
+	<p>
+		<strong>Use Case: </strong>Verify Operator<br>
+		<strong>Context: </strong>Operator verifies identity to use operator terminal.<br>
+		<strong>Actors: </strong>Operator<br>
+		<strong>Main Success Scenario: </strong><br>
+		<p style="margin-left: 25px;">
+			<strong>1.</strong> 	 Open operator terminal.<br>
+			<strong>2.</strong> 	 Enter operator number.<br>
+			<strong>3.</strong>		 Select task in operator terminal.<br>
+		</p>
+		<strong>Extensions:</strong>None<br>
+	</p>
+	<hr style="border-top: dotted 1px;"/><br>
+	<p>		<strong>Use Case: </strong>Verify Manager<br>
+		<strong>Context: </strong>Manager verifies identity to use manager terminal.<br>
+		<strong>Actors: </strong>Manager<br>
+		<strong>Main Success Scenario: </strong><br>
+		<p style="margin-left: 25px;">
+			<strong>1.</strong> 	 Open manager terminal.<br>
+			<strong>2.</strong> 	 Enter manager number.<br>
+			<strong>3.</strong>		 Select task in manager terminal.<br>
+		</p>
+		<strong>Extensions:</strong>None<br>
+	</p>
+	<br><br>
+
+	
+
+<!-- You will end the body section. Required.-->
+	</body>
+
+<!-- You will end the html document. Required.-->
+</html>

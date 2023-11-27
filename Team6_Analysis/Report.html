@@ -1,0 +1,200 @@
+<!-- DOCTYPE is required in HTML>
+<!--this is the formatting for a commenting line.  -->
+
+<!DOCTYPE html>
+
+<!--  Below is the start of the head of a document -->
+<!-- utf-8 is the character encoding which is popular in HTML -->
+<!-- Give your document a title -->
+
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>HTML Overview</title>  
+	</head>
+<!-- Notice how I ended the head of the document with a </head>.  This is required. -->
+	
+	<style>
+	table, th, td {
+	  border:1px solid black;
+	  
+	}
+	
+	.center {
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+	
+	img {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+	</style>
+
+
+<!--This is now the body -->
+<!--The <p> is the paragraph notation and <strong> is for bold type-->
+<!-- This is a list of header sizes -->
+	<p>
+	<h1 style="text-align:center;"><strong><font color = "red">CS 200 Team 6 - Project 2</font></strong></h1>
+	</p>
+	<hr>
+	
+	
+		<table class="center">
+		  <tr>
+		    <th>Name</th>
+		    <th>CWID</th>
+		    <th>Email</th>
+		    <th>Hours</th>
+		  </tr>
+		  <tr>
+		    <td>Luca Hallenbeck</td>
+		    <td>12158092</td>
+		    <td>lbhallenbeck@crimson.ua.com</td>
+		    <td>4</td>
+		  </tr>
+		  <tr>
+		    <td>Mae Olsen</td>
+		    <td>12218916</td>
+		    <td>meolsen2@crimson.ua.edu</td>
+		    <td>4</td>
+		  </tr>
+		  <tr>
+		    <td>Sam Kwon</td>
+		    <td>12243631</td>
+		    <td>skwon12@crimson.ua.edu</td>
+		    <td>4</td>
+		  </tr>
+		  <tr>
+		    <td>Hamza Adnan</td>
+		    <td>12149062</td>
+		    <td>hadnan@crimson.ua.edu</td>
+		    <td>4</td>
+		  </tr>
+		  <tr>
+		    <td>Christian Meraz-Santiago</td>
+		    <td>12254174</td>
+		    <td>cjmerazsantiago@crimson.ua.edu</td>
+		    <td>4</td>
+		  </tr>
+		</table>
+		
+		<h3 style="text-align:center;"><strong>Task Distribution Table:</strong></h3>
+		<table class="center">
+		  <tr>
+		    <th>Name</th>
+		    <th>Task</th>
+		    <th>Percentage</th>
+		  </tr>
+		  <tr>
+		    <td>Luca Hallenbeck</td>
+		    <td>Individual Activity Diagrams, Cohesion</td>
+		    <td>20%</td>
+		  </tr>
+		  <tr>
+		    <td>Mae Olsen</td>
+		    <td>Individual Activity Diagrams</td>
+		    <td>20%</td>
+		  </tr>
+		  <tr>
+		    <td>Sam Kwon</td>
+		    <td>Group Activity/Stereotyped Class Diagram, Submitter</td>
+		    <td>20%</td>
+		  </tr>
+		  <tr>
+		    <td>Hamza Adnan</td>
+		    <td>Analysis Paragraph, Stereotype Diagram</td>
+		    <td>20%</td>
+		  </tr>
+		  <tr>
+		    <td>Christian Meraz-Santiago</td>
+		    <td>Individual Activity Diagrams</td>
+		    <td>20%</td>
+		  </tr>
+		</table>
+		
+		<hr>
+		
+		<h3 style="text-align:center;"><strong>Bitbucket Statistics:</strong></h3>
+		<p><img src = "Bitbucket Stats.png" Width = "650" Height = "450"></p>
+		<hr>
+		
+		<h3 style="text-align:center;"><strong>Project 2 Analysis Description:</strong></h3>
+		<p style="margin-left: 25px; margin-right: 25px;">Now that we are familiar with ChocAn we can work to computerize the system and make sure it works with other systems that need to be accessed. The main systems that will be computerized are the provider, operator, and manager sections by creating a program that opens a specific terminal. Each terminal will have user-specific functions which will be determined by having the user login and verify their role. All data in each terminal will be backed up to a database. Each user will be given a laptop to run the programs. Furthermore, multiple APIs will be used to help the systems interact and share data. </p>
+		<hr>
+
+<!--This is how to embed an image in your document -->
+	<h3 style="text-align:center;"><strong>Stereotyped Class Diagram:</strong></h3>
+
+
+<!--This is how to embed an image in your document -->
+
+	<p>
+		<img src = "updatedGroupStereotyped.png" Width = "800" Height = "600">
+	</p>
+	
+	<h3 style="text-align:center;"><strong>Activity Diagram:</strong></h3>
+
+
+<!--This is how to embed an image in your document -->
+
+	<p>
+		<img src = "updatedGroupActivity.png" Width = "1200" Height = "550">
+	</p>
+<!-- This is how you include a heading for a section and an image -->
+	<hr>
+	<h3 style="text-align:center;"><strong>Individual Activity Diagrams:</strong></h3>
+
+	<h4 style="text-align:left;">Member Management:</h4>
+	<p>
+		<img src = "Member Management Activity.png" Width = "300" Height = "400">
+	</p>
+	
+		<h4 style="text-align:left;">Provider Management:</h4>
+	<p>
+		<img src = "Provider Management Activity.png" Width = "300" Height = "400">
+	</p>
+		
+	<h4 style="text-align:left;">Request Reports:</h4>
+	<p>
+		<img src = "Request Report Diagram.png" Width = "600" Height = "700">
+	</p>
+	<h4 style="text-align:left;">Bill ChocAn:</h4>
+	<p>
+		<img src = "Bill ChocAn Activity Diagram.png" Width = "600" Height = "700">
+	</p>
+	<h4 style="text-align:left;">Weekly Accounting Procedures:</h4>
+	<p>
+		<img src = "Weekly Accounting Procedures.png" Width = "700" Height = "800">
+	</p>
+	<h4 style="text-align:left;">Verify Member:</h4>
+	<p>
+		<img src = "VerifyMemberUseCase.png" Width = "300" Height = "400">
+	</p>
+	<h4 style="text-align:left;">Request Provider Directory:</h4>
+	<p>
+		<img src = "Request Provider Directory.png" Width = "150" Height = "400">
+	</p>
+	
+		<h4 style="text-align:left;">Verify Provider:</h4>
+	<p>
+		<img src = "Verify Provider.png" Width = "300" Height = "400">
+	</p>
+	
+		<h4 style="text-align:left;">Verify Manager:</h4>
+	<p>
+		<img src = "Verify Manager.png" Width = "300" Height = "400">
+	</p>
+	
+		<h4 style="text-align:left;">Verify Operator:</h4>
+	<p>
+		<img src = "Verify Operator.png" Width = "300" Height = "400">
+	</p>
+
+<!-- You will end the body section. Required.-->
+	</body>
+
+<!-- You will end the html document. Required.-->
+</html>

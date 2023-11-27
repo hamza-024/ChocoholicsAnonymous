@@ -1,0 +1,209 @@
+<!-- DOCTYPE is required in HTML>
+<!--this is the formatting for a commenting line.  -->
+
+<!DOCTYPE html>
+
+<!--  Below is the start of the head of a document -->
+<!-- utf-8 is the character encoding which is popular in HTML -->
+<!-- Give your document a title -->
+
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>HTML Overview</title>  
+	</head>
+<!-- Notice how I ended the head of the document with a </head>.  This is required. -->
+	
+	<style>
+	table, th, td {
+	  border:1px solid black;
+	  
+	}
+	
+	.center {
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+	
+	img {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+	</style>
+
+
+<!--This is now the body -->
+<!--The <p> is the paragraph notation and <strong> is for bold type-->
+<!-- This is a list of header sizes -->
+	<p>
+	<h1 style="text-align:center;"><strong>Project 1</strong></h1>
+	</p>
+	<hr>
+		<h3 style="text-align:center;"><strong>Project 1 Overview:</strong></h3>
+		<p style="margin-left: 25px; margin-right: 25px;">In this project, we utilized UMLentino, Bitbucket, HTML, and Eclipse to collaborate with each other and create the solution. We were asked to create data processing software for the company Chocoholics Anonymous. First, we had to read through the project description to understand our objectives and seek out key terms. We then turned these key terms into a glossary, defining what may need to be defined for viewers of this project. Second, we each made our own use case diagrams to break down the functions of this software system. We combined our individual use case diagrams into one group diagram. Finally, we used the diagram to create a list of use cases and break down these functions further. We provided the name of the use case, its context, what actors participated in it, what was done step by step, and what possible extensions of each step were. These three components were formatted into an HTML file (both for the individual and for the group), along with a task distribution table and a Bitbucket statistics picture for the group file.</p>
+		<hr>
+
+<!--This is how to embed an image in your document -->
+	<h3 style="text-align:center;"><strong>Figure 1: Use Case Diagram</strong></h3>
+
+
+<!--This is how to embed an image in your document -->
+
+	<p>
+		<img src = "ChocAn Data Processing Software System.png" Width = "1000" Height = "900"/>
+	</p>
+	
+	<hr>
+	
+<!-- This is how you include a heading for a section and an image -->
+	<h3 style="text-align:center;"><strong>Glossary:</strong></h3>
+	<p>
+		<ul>
+			<li><strong>Acme Accounting Services: </strong>third-party organization responsible for financial procedures and processing payments of ChocAn membership fees</li>
+			<li><strong>Chocoholics Anonymous (ChocAn): </strong>an organization dedicated to helping people addicted to chocolate</li>
+			<li><strong>ChocAn Data Center: </strong>contains information on ChocAn’s members and providers; runs accounting procedures</li>
+			<li><strong>EFT: </strong>electronic funds transfer</li>
+			<li><strong>Operator: </strong>employees that utilize the ChocAn Data Center to edit member and provider information</li>
+			<li><strong>Provider: </strong>health care professional that provides services to ChocAn members</li>
+			<li><strong>Provider Directory: </strong>alphabetically ordered list of service names and corresponding service codes and fees</li>
+			<li><strong>Software Product: </strong>the data processing software created by our organization for ChocAn's system</li>
+		</ul> 
+	</p>
+	<hr>
+	<h3 style="text-align:center;"><strong>Use Case List:</strong></h3>
+	<p>
+		<strong>Use Case: </strong>Request Provider Directory<br>
+		<strong>Context: </strong>The provider can request to see the full Provider Directory at any point.<br>
+		<strong>Actors: </strong>Provider<br>
+		<strong>Main Success Scenario: </strong><br>
+		<p style="margin-left: 25px;">
+			<strong>1.</strong> Request Provider Directory from software product<br>
+			<strong>2.</strong> Receive email-attachment of Provider Directory<br>
+		</p>
+		<strong>Extensions: </strong>None<br>	
+	</p><br>
+	<hr style="border-top: dotted 1px;"/><br>
+	<p>
+		<strong>Use Case: </strong>Bill ChocAn<br>
+		<strong>Context: </strong>Provider acquires appropriate account and service information from member to bill ChocAn for said service(s).<br>
+		<strong>Actors: </strong>Provider, ChocAn Data Center<br>
+		<strong>Main Success Scenario: </strong><br>
+		<p style="margin-left: 25px;">
+			<strong>1.</strong> Swipe member card or key in member number<br>
+			<strong>2.</strong> Key in date of service in MM-DD-YYYY form<br>
+			<strong>3.</strong> Enter service code<br>
+			<strong>&emsp;3.1</strong> Search Provider Directory for appropriate six-digit service code<br>
+			<strong>&emsp;3.2</strong> Add comments about service provided (optional)<br>
+			<strong>4.</strong>Write record to disk<br>
+		</p>
+		<strong>Extensions:</strong><br>
+		<p style="margin-left: 25px;">
+			<strong>3a.</strong> Print error: service code does not exist<br>
+		</p>
+	</p><br>
+	<hr style="border-top: dotted 1px;"/><br>
+	<p>
+		<strong>Use Case: </strong>Edit member information<br>
+		<strong>Context: </strong>Operator changes member information in system if needed.<br>
+		<strong>Actors: </strong>Operator<br>
+		<strong>Main Success Scenario: </strong><br>
+		<p style="margin-left: 25px;">
+			<strong>1.</strong> Member information has changed<br>
+			<strong>2.</strong> Operator chooses to update information in system<br>
+		</p>
+		<strong>Extensions:</strong><br>
+		<p style="margin-left: 25px;">
+			<strong>2a.</strong> Add member<br>
+			<strong>2b.</strong> Remove member if they have resigned<br>
+			<strong>2c.</strong> Update member records<br>
+		</p>
+	</p><br>
+	<hr style="border-top: dotted 1px;"/><br>
+	<p>
+		<strong>Use Case: </strong>Edit provider information<br>
+		<strong>Context: </strong>Operator changes provider information in system if needed.<br>
+		<strong>Actors: </strong>Operator<br>
+		<strong>Main Success Scenario: </strong><br>
+		<p style="margin-left: 25px;">
+			<strong>1.</strong> Provider information has changed<br>
+			<strong>2.</strong> Operator chooses to update information in system<br>
+		</p>
+		<strong>Extensions:</strong><br>
+		<p style="margin-left: 25px;">
+			<strong>2a.</strong> Add provider<br>
+			<strong>2b.</strong> Remove provider<br>
+			<strong>2c.</strong> Update provider records<br>
+		</p>
+	<hr style="border-top: dotted 1px;"/><br>
+	<p>
+		<strong>Use Case: </strong>Send weekly service reports<br>
+		<strong>Context: </strong>Look through services provided during the week and create reports to send to appropriate recipients.<br>
+		<strong>Actors: </strong>ChocAn Data Center<br>
+		<strong>Main Success Scenario: </strong><br>
+		<p style="margin-left: 25px;">
+			<strong>1.</strong> Weekly file of services is read<br>
+			<strong>2.</strong> Reports are printed and sent out<br>
+			<strong>&emsp; 2.1</strong> Send email to each member who has received a service that week, including their personal information, as well as information on the service(s)<br>
+			<strong>&emsp; 2.2</strong> Send email to each provider who has billed ChocAn that week, including the list of services they provided to members<br>
+		</p>
+		<strong>Extensions: </strong>None<br>
+	</p>
+	<hr style="border-top: dotted 1px;"/><br>
+	<p>
+		<strong>Use Case: </strong>Write EFT data to disk<br>
+		<strong>Context: </strong>Record EFT data and check provider bank accounts.<br>
+		<strong>Actors: </strong>ChocAn Data Center<br>
+		<strong>Main Success Scenario: </strong><br>
+		<p style="margin-left: 25px;">
+			<strong>1.</strong> Create record of EFT data for payments that week<br>
+			<strong>2.</strong> Write record to a disk<br>
+			<strong>3.</strong> Banking computers will ensure that providers received appropriate payment<br>
+		</p>
+		<strong>Extensions: </strong>None<br>
+	</p>
+	<hr style="border-top: dotted 1px;"/><br>
+	<p>
+		<strong>Use Case: </strong>Record payments<br>
+		<strong>Context: </strong>Acme Accounting Services takes member payment information from ChocAn to process and document.<br>
+		<strong>Actors: </strong>Acme Accounting Services<br>
+		<strong>Main Success Scenario: </strong><br>
+		<p style="margin-left: 25px;">
+			<strong>1.</strong> Check ChocAn system to see if members have paid their fees<br>
+			<strong>2.</strong> Record payments into Acme system<br>
+		</p>
+		<strong>Extensions: </strong>None<br>
+	</p>
+	<hr style="border-top: dotted 1px;"/><br>
+	<p>
+		<strong>Use Case: </strong>Suspend member<br>
+		<strong>Context: </strong>Acme Accounting Services determines that a member needs to be suspended from ChocAn system.<br>
+		<strong>Actors: </strong>Acme Accounting Services<br>
+		<strong>Main Success Scenario: </strong><br>
+		<p style="margin-left: 25px;">
+			<strong>1.</strong> Acme checks payment records to see that member has not paid fees<br>
+			<strong>2.</strong> Member gets suspended from ChoAnsystem<br>
+		</p>
+		<strong>Extensions: </strong>None<br>
+	</p>
+	<hr style="border-top: dotted 1px;"/><br>
+	<p>
+		<strong>Use Case: </strong>Reinstate member<br>
+		<strong>Context: </strong> Acme Accounting Services determines that a member can be reinstated into the ChocAn system.<br>
+		<strong>Actors: </strong>Acme Accounting Services<br>
+		<strong>Main Success Scenario: </strong><br>
+		<p style="margin-left: 25px;">
+			<strong>1.</strong> Acme checks payment records to see that suspended member has paid overdue fees<br>
+			<strong>2.</strong> Suspended member gets reinstated with ChocAn<br>
+		</p>
+		<strong>Extensions: </strong>None<br>
+	</p>
+	</p><br><br>
+
+	
+
+<!-- You will end the body section. Required.-->
+	</body>
+
+<!-- You will end the html document. Required.-->
+</html>
